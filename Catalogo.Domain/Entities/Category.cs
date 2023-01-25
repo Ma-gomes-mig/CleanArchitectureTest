@@ -15,6 +15,7 @@ namespace Catalogo.Domain.Entities
             ValidateDomain(name, imageUrl);
         }
 
+        //Criado apenas para popular a tabela com dado
         public Category(int id, string name, string imageUrl)
         {
             DomainExceptionValidation.When(id < 0, "valor de Id inválido.");
